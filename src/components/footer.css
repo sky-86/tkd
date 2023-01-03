@@ -1,3 +1,24 @@
 .footer {
-  margin: 5em;
+  margin-top: 5vh;
+  background-color: #eee;
+  height: auto;
+  position: relative;
+  z-index: 100;
+  padding: 1vh 0 1vh 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2vh 30vw 2vh 30vw;
+}
+
+.copyright {
+  margin-left: 1em;
+  text-align: center;
 }

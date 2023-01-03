@@ -1,15 +1,9 @@
 .home {
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  height: 60vh;
-  display: grid;
-  grid-template-rows: 40vh auto auto;
-  row-gap: 3em;
+  width: 100%;
+  height: auto;
 }
 
 .cards {
-  grid-row: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -17,4 +11,8 @@
 
 .card {
   width: 14em;
+}
+
+.bgImage {
+  width: 100%;
 }

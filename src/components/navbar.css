@@ -1,0 +1,43 @@
+.logo {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.navbar-brand>img {
+  padding: 7px 14px;
+}
+
+.logo-nav {
+  max-width: 50%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  margin-right: 1em;
+}
+
+.nav-title {
+  align-items: center;
+  line-height: normal;
+  font-weight: 700;
+  font-size: larger;
+  margin-top: 1em;
+}
+
+.offcanvas-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.offcanvas-header>* {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

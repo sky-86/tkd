@@ -3,24 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from "react-router-dom";
-import { LinkContainer } from 'react-router-bootstrap';
 import './navbar.css';
-
-function Link(props: any) {
-  return (
-    <LinkContainer to={props.to}>
-      <Nav.Link>{props.name}</Nav.Link>
-    </LinkContainer>
-  );
-}
+import Link from './link';
 
 // https://react-bootstrap.github.io/components/navbar/
 function NavBar() {
-  const expand = 'lg';
+  const expand = 'md';
 
   return (
     <>
-      <Navbar key={expand} bg="light" sticky='top' expand={expand} className="mb-3">
+      <Navbar key={expand} bg="light" sticky='top' expand={expand}>
         <Container fluid>
           <Navbar.Brand href="/">
             <img className='logo' src='logo.png' alt='OSTKD LOGO'></img>
@@ -43,11 +35,11 @@ function NavBar() {
 
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Link to="/" name="Home" />
-                <Link to="/programs" name="Programs" />
-                <Link to="/faq" name="Faq" />
-                <Link to="/about" name="About" />
-                <Link to="/contact" name="Contact" />
+                <Link to="/" name="HOME" />
+                <Link to="/instructors" name="INSTRUCTORS" />
+                <Link to="/faq" name="FAQ" />
+                <Link to="/calendar" name="CALENDAR" />
+                <Link to="/contact" name="CONTACT" />
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

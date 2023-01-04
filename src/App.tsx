@@ -10,10 +10,10 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Pages.HomePage />} />
-          <Route path='programs' element={<Pages.ProgramsPage />} />
           <Route path='faq' element={<Pages.FaqPage />} />
-          <Route path='about' element={<Pages.AboutPage />} />
           <Route path='contact' element={<Pages.ContactPage />} />
+          <Route path='instructors' element={<Pages.InstructorPage/>} />
+          <Route path='calendar' element={<Pages.CalendarPage/>} />
         </Route>
       </Routes>
       <Footer />

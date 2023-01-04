@@ -3,6 +3,10 @@
   height: auto;
 }
 
+.bgImage {
+  width: 100%;
+}
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -10,9 +14,60 @@
 }
 
 .card {
-  width: 14em;
+  width: 25%;
 }
 
-.bgImage {
-  width: 100%;
+.card-body {
+  display: flex;
+  flex-direction: column;
 }
+
+.card-body>.btn {
+  margin-top: auto;
+}
+
+.stack {
+  margin-top: -13vh;
+}
+
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1024px) {
+  .stack {
+    margin-top: -5vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 3vh;
+  }
+
+  .stack {
+    margin-top: -5vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 3vh;
+  }
+
+  .stack {
+    margin-top: 2vh;
+  }
+}
+
+

@@ -1,13 +1,13 @@
 import HomePage from './home';
-import AboutPage from './about';
-import ProgramsPage from './programs';
 import FaqPage from './faq';
 import ContactPage from './contact';
+import InstructorPage from './instructor';
+import CalendarPage from './calendar';
 
 export {
   HomePage,
-  AboutPage,
-  ProgramsPage,
   FaqPage,
-  ContactPage
+  InstructorPage,
+  ContactPage,
+  CalendarPage
 };

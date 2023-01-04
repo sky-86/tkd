@@ -1,25 +1,29 @@
 import Nav from 'react-bootstrap/Nav';
 import './footer.css';
 import { SocialIcon } from 'react-social-icons';
+import Link from './link';
 
 function Footer() {
   return (
     <div className='footer'>
       <Nav>
         <Nav.Item>
-          <Nav.Link href='/'>HOME</Nav.Link>
+          <Link to="/" name="HOME" />
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href='/programs'>PROGRAMS</Nav.Link>
+          <Link to="/instructors" name="INSTRUCTORS" />
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href='/faq'>FAQ</Nav.Link>
+          <Link to="/faq" name="FAQ" />
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href='/about'>ABOUT</Nav.Link>
+          <Link to="/about" name="ABOUT" />
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href='/contact'>CONTACT</Nav.Link>
+          <Link to="/calendar" name="CALENDAR" />
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/contact" name="CONTACT" />
         </Nav.Item>
       </Nav>
       <div className='socials'>

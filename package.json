@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "build:client": "tsc && vite build",
     "build:server": "cd ./backend_server && cargo build --release",
-    "production": "./backend_server/target/release/backend_server"
+    "prod": "./backend_server/target/release/backend_server"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

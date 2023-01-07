@@ -1,8 +1,30 @@
+@import '../styles';
+
 .logo {
   max-width: auto;
   height: 13vh;
   vertical-align: middle;
   border: 0;
+}
+
+.navbar {
+  background-color: $navbar-bg-color;
+}
+
+.nav-link {
+  color: $nav-link-color !important;
+}
+
+.nav-link:hover {
+  color: $nav-link-hover !important;
+}
+
+.active {
+  color: $nav-link-active !important;
+}
+
+.active:hover {
+  color: $nav-link-hover !important;
 }
 
 .navbar-brand {

@@ -4,3 +4,4 @@
 - [x] footer links, need to change them to react-router links
 - [ ] landing page shows homepage image, add scroll down arrow
 - [ ] close navbar after clicking on mobile only
+- [ ] logo is still scaling weird

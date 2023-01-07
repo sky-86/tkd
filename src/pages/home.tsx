@@ -1,12 +1,13 @@
-import './home.css';
+import './home.scss';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 
+//<img src='/new-homepage.jpg' className="bgImage" />
 function HomePage() {
   return (
     <>
-      <img src='/new-homepage.jpg' className="bgImage" />
+      <div className='bgImage'></div>
       <Stack className='stack' gap={3}>
         <div className='cards'>
           <Card className='text-center'>

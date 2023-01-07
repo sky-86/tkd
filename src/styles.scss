@@ -1,0 +1,53 @@
+$font-stack1: Helvetica, sans-serif;
+$font-stack2: Arial, sans-serif;
+
+$cultured: #f8f9faff;
+$cultured-2: #e9ecefff;
+$gainsboro: #dee2e6ff;
+$light-gray: #ced4daff;
+$cadet-blue-crayola: #adb5bdff;
+$sonic-silver: #6c757dff;
+$davys-grey: #495057ff;
+$onyx: #343a40ff;
+$eerie-black: #212529ff;
+
+$body-bg-color: $eerie-black;
+$body-font-color: $cultured;
+
+$card-bg-color: $onyx;
+$card-text-font-color: $light-gray;
+$card-title-font-color: $cultured;
+$card-btn-bg-color: $eerie-black;
+$card-btn-bg-hover-color: $onyx;
+$card-btn-font-color: $cultured;
+$card-btn-font-hover-color: $cultured;
+
+$navbar-bg-color: $davys-grey;
+$footer-bg-color: $davys-grey;
+
+$nav-link-color: $cultured;
+$nav-link-hover: $sonic-silver;
+$nav-link-active: $eerie-black;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: $body-bg-color;
+  color: $body-font-color;
+  font: 100% $font-stack2;
+}

@@ -1,10 +1,14 @@
+@import '../styles';
+
+.bgImage {
+  background: url('/new-homepage.jpg') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
 .home {
   width: 100%;
   height: auto;
-}
-
-.bgImage {
-  width: 100%;
 }
 
 .cards {
@@ -15,15 +19,35 @@
 
 .card {
   width: 25%;
+  border: 0.1rem solid $davys-grey !important;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
+  background-color: $card-bg-color;
+}
+
+.card-text {
+  color: $card-text-font-color;
+}
+
+.card-title {
+  color: $card-title-font-color;
+  font-weight: bold !important;
 }
 
 .card-body>.btn {
   margin-top: auto;
+  background-color: $card-btn-bg-color;
+  color: $card-btn-font-color;
+  font-weight: bold;
+  border: none;
+}
+
+.card-body>.btn:hover {
+  background-color: $card-btn-bg-hover-color;
+  color: $card-btn-font-hover-color;
 }
 
 .stack {
@@ -32,11 +56,17 @@
 
 @media screen and (max-width: 1366px) {
 }
+
 @media screen and (max-width: 1024px) {
   .stack {
     margin-top: -5vh;
   }
+
+  .bgImage {
+    margin-top: 10vh;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .cards {
     display: flex;
@@ -52,7 +82,12 @@
   .stack {
     margin-top: -5vh;
   }
+
+  .bgImage {
+    margin-top: 10vh;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .cards {
     display: flex;
@@ -68,6 +103,8 @@
   .stack {
     margin-top: 2vh;
   }
+
+  .bgImage {
+    margin-top: 12vh;
+  }
 }
-
-

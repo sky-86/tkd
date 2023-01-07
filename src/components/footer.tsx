@@ -1,5 +1,5 @@
 import Nav from 'react-bootstrap/Nav';
-import './footer.css';
+import './footer.scss';
 import { SocialIcon } from 'react-social-icons';
 import Link from './link';
 

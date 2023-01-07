@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:client": "tsc && vite build",
+    "build:server": "cd ./backend_server && cargo build --release",
+    "production": "./backend_server/target/release/backend_server"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -25,6 +27,7 @@
     "@types/react-dom": "^18.0.9",
     "@types/react-router-bootstrap": "^0.24.5",
     "@vitejs/plugin-react": "^3.0.0",
+    "sass": "^1.57.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }

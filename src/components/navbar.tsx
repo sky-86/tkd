@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Outlet } from "react-router-dom";
-import './navbar.css';
+import './navbar.scss';
 import Link from './link';
 
 // https://react-bootstrap.github.io/components/navbar/
@@ -12,7 +12,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar key={expand} bg="light" sticky='top' expand={expand}>
+      <Navbar key={expand} fixed='top' expand={expand}>
         <Container fluid>
           <Navbar.Brand href="/">
             <img className='logo' src='logo.png' alt='OSTKD LOGO'></img>

@@ -1,0 +1,46 @@
+import * as Components from './components/components';
+import * as Pages from './pages/pages';
+import { useEffect } from 'preact/hooks';
+
+function createScrollAnimations() {
+  const options = {
+    root: null,
+    rootMargin: '-80% 0% 0% 0%',
+    threshold: 0.9
+  }
+
+  const observer = new IntersectionObserver(e => {
+    e.forEach(entry => {
+      console.log(entry.intersectionRatio);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, options);
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((e) => observer.observe(e));
+}
+
+export default function App() {
+  // activate the scroll animations
+  useEffect(() => {
+    createScrollAnimations();
+  });
+
+  return (
+    <>
+      <Components.Header />
+      <Pages.Landing />
+      <div class={'pages'}>
+        <Pages.Faq />
+        <Pages.About />
+        <Pages.Calendar />
+        <Pages.Contact />
+      </div>
+      <Components.Footer />
+    </>
+  )
+}

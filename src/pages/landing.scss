@@ -1,0 +1,41 @@
+.landing {
+  height: 100vh;
+
+  background: url('/new-homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+
+.greeting {
+  margin-top: 20vh;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+.arrowDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin-bottom: 5px;
+}
+
+.arrowText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+//.arrow {}

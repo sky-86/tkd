@@ -1,3 +1,7 @@
+$blue: #1d95c2;
+$black: #001020;
+$white: #fefefe;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,10 @@
   color: inherit;
 }
 
+body {
+  background-color: $black;
+}
+
 .hidden {
   opacity: 0;
   transition: opacity 1s;
@@ -18,4 +26,10 @@
 .show {
   opacity: 1;
   transition: opacity 1s;
+}
+
+.logo {
+  margin-top: 5vh;
+  margin-bottom: 3vw;
+  width: 50vw;
 }

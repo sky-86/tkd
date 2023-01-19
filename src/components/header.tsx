@@ -1,5 +1,5 @@
 import { useEffect } from 'preact/hooks';
-import './header.scss';
+//import './header.scss';
 
 export default function Header() {
   useEffect(() => {

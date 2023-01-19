@@ -32,11 +32,11 @@ export default function App() {
 
   return (
     <>
-      <Components.Header />
       <Pages.Landing />
       <div class={'pages'}>
-        <Pages.Faq />
+        <img class={'logo'} src={'/logo.png'} alt={'logo'} />
         <Pages.About />
+        <Pages.Faq />
         <Pages.Calendar />
         <Pages.Contact />
       </div>

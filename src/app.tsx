@@ -5,8 +5,8 @@ import { useEffect } from "preact/hooks";
 function createScrollAnimations() {
   const options = {
     root: null,
-    rootMargin: "-80% 0% 0% 0%",
-    threshold: 0.9,
+    rootMargin: "-60% 0% 0% 0%",
+    threshold: 0.5,
   };
 
   const observer = new IntersectionObserver((e) => {

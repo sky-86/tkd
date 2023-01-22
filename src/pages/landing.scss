@@ -3,13 +3,10 @@ $black: #001020;
 $white: #fefefe;
 
 .landing {
-  height: 100vh;
-
   background: url("/new-homepage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
   display: flex;
   flex-direction: column;
@@ -18,7 +15,7 @@ $white: #fefefe;
 }
 
 .greeting {
-  margin-top: 20vh;
+  margin-top: 100px;
   font-size: 3rem;
   font-weight: 700;
   color: $white;
@@ -43,7 +40,7 @@ $white: #fefefe;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 .arrowText {

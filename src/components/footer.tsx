@@ -11,7 +11,7 @@ export default function Footer() {
         <a href={"https://www.youtube.com/@oceanspringstaekwondo4834"}>
           <BsYoutube size={30} color={"#ff0000"} />
         </a>
-        <a href={"#email"}>
+        <a href={"mailto:osmstkd@gmail.com"}>
           <BsEnvelope size={30} />
         </a>
       </div>

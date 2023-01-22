@@ -1,0 +1,29 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10vw 0 10vw;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1vh;
+}
+
+.answer {
+  .bold {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  p {
+    margin: 1vh 0 1vh 0;
+  }
+}
+
+.bold:last-child {
+  margin-top: 3vh;
+}
+
+.answer:not(:last-child) {
+  margin-bottom: 5vh;
+}

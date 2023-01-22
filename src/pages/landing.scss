@@ -1,7 +1,11 @@
+$blue: #1d95c2;
+$black: #001020;
+$white: #fefefe;
+
 .landing {
   height: 100vh;
 
-  background: url('/new-homepage.jpg');
+  background: url("/new-homepage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,15 +14,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .greeting {
   margin-top: 20vh;
   font-size: 3rem;
   font-weight: 700;
-  color: white;
-  text-shadow: 0 0 10px black;
+  color: $white;
+  text-shadow: 0 0 10px $black;
   text-align: center;
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -27,10 +31,10 @@
 
 @keyframes fadeInAnimation {
   0% {
-  opacity: 0;
+    opacity: 0;
   }
   100% {
-  opacity: 1;
+    opacity: 1;
   }
 }
 

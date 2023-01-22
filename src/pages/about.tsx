@@ -1,11 +1,11 @@
-import text from '../assets/text.json';
-
 export default function About() {
-  const about = text.about;
   return (
-    <div class={'page'}>
+    <div class={"page"}>
       <h1>About</h1>
-      <p>{about}</p>
+      <p>
+        Owner and Head Instructor: Barry Favors. Certified Instructor Henry
+        Davis.
+      </p>
     </div>
-  )
+  );
 }
